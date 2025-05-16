@@ -1,0 +1,20 @@
+// src/App.tsx
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import RegisterEmployer from "./pages/RegisterEmployer";
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/registrer-voksen" element={<RegisterEmployer />} />
+        {/* Vi kan legge til flere ruter etter hvert */}
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
